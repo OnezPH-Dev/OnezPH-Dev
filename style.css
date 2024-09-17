@@ -42,3 +42,9 @@ body{
 .smedia > li > a:hover{
     transform: scale(1.1);
 } */
+.dcvHover, .ltHover{
+    transition: .2s ease-in;
+}
+.dcvHover:hover, .ltHover:hover{
+    transform: scale(1.1, 1.1);
+}
