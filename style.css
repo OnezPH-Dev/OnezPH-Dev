@@ -16,6 +16,14 @@ body{
 ::-webkit-scrollbar-thumb {
     background-color: #e5e7eb;
 }
+::selection {
+    color: #151723;
+    background-color: #e5e7eb;
+}
+.spcSelection::selection {
+    color: #e5e7eb;
+    background-color: #282c42;
+}
 .navbar{
     background: rgba(21, 23, 35, 0.4);
     backdrop-filter: blur( 40px );
@@ -53,6 +61,63 @@ body{
     border-bottom: 1px solid #ffffff0d;
     min-height: 700px;
 }
+
+.sSection{
+    /* min-height: 700px; */
+    padding: 100px 0;
+}
+.label:hover .labelLine{
+    width: 8rem;
+}
+.labelLine{
+    width: 4rem;
+    height: 1px;
+    border-bottom: 1px dashed#fcfcfc;
+    margin-right: 10px;
+    transition: .15s linear;
+}
+
+.skill{
+    height: 5.5rem;
+    width: 5.5rem;
+    padding: .5rem;
+    font-size: .8rem;
+    border-radius: 10px;
+    color: #fcfcfc;
+    background-color: #282c42;
+    overflow: hidden;
+
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+.skill:hover .skillName{
+    opacity: 1;
+}
+.skill:hover .skillLogo{
+    opacity: .2;
+    transform: scale(2.2) translate(30%, 30%) rotate(-30deg);
+}
+.skillName{
+    position: relative;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: 2;
+}
+.skillLogo{
+    position: absolute;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    font-size: 50px;
+}
+
+
 @media screen and (max-height: 576px) {
     .fSection{
         height: calc(100vh - 100px);
