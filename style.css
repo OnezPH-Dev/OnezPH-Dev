@@ -48,10 +48,15 @@ body{
 .dcvHover:hover, .ltHover:hover{
     transform: scale(1.1, 1.1);
 }
-
-/* @media screen and (min-height: 630px) {
-    .fWrap{
-        height: fit-content;
-        padding: 100px 0;
+.fSection{
+    height: calc(100vh - 78px);
+    border-bottom: 1px solid #ffffff0d;
+    min-height: 700px;
+}
+@media screen and (max-height: 576px) {
+    .fSection{
+        height: calc(100vh - 100px);
+        border-bottom: 1px solid #ffffff0d;
+        min-height: 700px;
     }
-} */
+}
