@@ -123,6 +123,6 @@ body{
     .fSection{
         height: calc(100vh - 100px);
         border-bottom: 1px solid #ffffff0d;
-        min-height: 700px;
+        /* min-height: 700px; */
     }
 }
