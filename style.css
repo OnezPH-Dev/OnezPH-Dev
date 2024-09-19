@@ -64,7 +64,7 @@ body{
 
 .sSection{
     /* min-height: 700px; */
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .label:hover .labelLine{
     width: 8rem;
@@ -115,7 +115,7 @@ body{
     object-fit: contain;
     transition: opacity .2s ease-in-out, transform .2s ease-in-out;
     font-size: 43px;
-    width: 43px;
+    width: 38px;
 }
 
 
